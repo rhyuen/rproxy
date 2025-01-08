@@ -3,9 +3,9 @@ export default async function handler(req, res) {
     try {
 
         const queryString = await req.url.split('?')[1] || '';
-        const decodedQueryString = decodeURIComponent(queryString);
+        const decodedQueryString = decodeURIComponent(queryString).replace("=", "");
         // console.log(req.url);
-        // console.log(queryString);
+        console.log(queryString);
         console.log("hostname follows.")
         console.log(req.headers.origin);
         console.log(decodedQueryString);
