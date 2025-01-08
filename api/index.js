@@ -13,7 +13,7 @@ export default async function handler(req, res) {
 
         const allowedOrigins = [
             "http://localhost:5500",
-            "https://robert-discards.vercel.app/"
+            "https://robert-discards.vercel.app"
         ];
 
         if(!allowedOrigins.includes(req.headers.origin)){
