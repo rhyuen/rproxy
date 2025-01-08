@@ -12,7 +12,8 @@ export default async function handler(req, res) {
 
 
         const allowedOrigins = [
-            "http://localhost:5500"
+            "http://localhost:5500",
+            "https://robert-discards.vercel.app/"
         ];
 
         if(!allowedOrigins.includes(req.headers.origin)){
@@ -21,11 +22,10 @@ export default async function handler(req, res) {
                 details: "notallowed because of cors reasons."
             });
         }else{
-            res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5500');
+            res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
             res.setHeader('Access-Control-Allow-Methods', 'GET');
             res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
         }
-
 
         
 
