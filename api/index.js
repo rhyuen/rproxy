@@ -32,7 +32,10 @@ export default async function handler(req, res) {
         const allowedRSSURLs = [
             "https://ricochet.media/feed",
             "https://thenarwhal.ca/feed",
-            "https://thetyee.ca/rss2.xml"
+            "https://thetyee.ca/rss2.xml",
+            "https://pressprogress.ca/feed",
+            "https://breachmedia.ca/feed",
+            "https://www.readthemaple.com/rss"
         ];
         
         
