@@ -35,7 +35,10 @@ export default async function handler(req, res) {
             "https://thetyee.ca/rss2.xml",
             "https://pressprogress.ca/feed",
             "https://breachmedia.ca/feed",
-            "https://www.readthemaple.com/rss"
+            "https://www.readthemaple.com/rss",
+            "https://www.nationalobserver.com/front/rss",
+            "https://rabble.ca/feed",
+            "https://thelogic.co/category/news/feed"
         ];
         
         
